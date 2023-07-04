@@ -22,8 +22,8 @@ var IndiaDsTile = new ol.layer.Tile({
     title: 'India Districts',
     source: new ol.source.TileWMS({
 
-        url: 'http://localhost:8080/geoserver/ASD_Project/wms',
-        params: {'LAYERS':'	ASD_Project:India_Dist','TILED': true},
+        url: 'http://localhost:8080/geoserver/"store"/wms',
+        params: {'LAYERS':'	','TILED': true},
         server: 'geoserver',
         visible: true
 
@@ -38,8 +38,8 @@ var IndiaStTile = new ol.layer.Tile({
     title: 'India States',
     source: new ol.source.TileWMS({
 
-        url: 'http://localhost:8080/geoserver/ASD_Project/wms',
-        params: {'LAYERS':'ASD_Project:India_State_Boundary','TILED': true},
+        url: 'http://localhost:8080/geoserver//wms',
+        params: {'LAYERS':'','TILED': true},
         server: 'geoserver',
         visible: true
 
@@ -109,7 +109,7 @@ var popup = new ol.Overlay ({
             popup.setPosition(undefined);
         }    
     });
-/**
+
 // autolocate
 var intervalAutolocate;
 var posCurrent;
@@ -178,7 +178,7 @@ $("#btncrosshair").on("click",function(event) {
 */
 
 var lengthButton = document.createElement ('button' );
-lengthButton.innerHTML='<img src="resources/length.png" alt=" " style="width: 17px;height:17px;filter:brightness(0) invert(1); vertical-align"';
+lengthButton.innerHTML='<img src="" alt=" " style="width: 17px;height:17px;filter:brightness(0) invert(1); vertical-align"';
 lengthButton.className = 'myButton';
 lengthButton.id = 'lengthButton';
 
@@ -209,7 +209,7 @@ lengthButton.addEventListener("click", () => {
 map.addControl(lengthControl);
 
 var areaButton = document.createElement ('button');
-areaButton.innerHTML='<img src="C:\Apache24\htdocs\WebGIS\resources" alt=" " style="width: 17px;height:17px;filter:brightness(0) invert(1); vertical-align"';
+areaButton.innerHTML='<img src=" " alt=" " style="width: 17px;height:17px;filter:brightness(0) invert(1); vertical-align"';
 areaButton.className = 'myButton';
 areaButton.id = 'areaButton';
  
