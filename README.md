@@ -1,5 +1,5 @@
 # WebGIS-Project
-WebGIS Project made using OpenLayers,Apache &amp; PostgreSQL
+WebGIS Project made using OpenLayers,GeoServer,Apache Tomcat & PostgreSQL
 
 Shapefiles must be published to GeoServer.
 Usage of PostgreSQL is a must for using all features.
